@@ -27,9 +27,8 @@ Output: 1
         for (int i = 0; i < nums.length; i++)
         {
            int flag=0;
-            for (int j = 0; j < nums.length; j++)
-            {
-                if (nums[i]==nums[j])
+            for (int num : nums) {
+                if (nums[i] == num)
                     flag++;
             }
 
@@ -37,8 +36,7 @@ Output: 1
             {
                 if (flag==1)
                     System.out.println("The single number: "+nums[i]);
-            }else if (nums[i]!=nums[i-1])
-            {
+            }else if (nums[i]!=nums[i-1]) {
                if (flag==1)
                    System.out.println("The single number: "+nums[i]);
             }
